@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고양이 습성</title>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/*고양이습성있는 쪽 테이블*/
+table, td, th {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<!--경계-->
+<body>
+  <header>
+    <h2>고양이 습성</h2>
+  </header>
+  
+  <section>
+    <nav>
+      <ul>
+        <img src="../image/cats.jpg" alt="cats" width="300" height="500">
+      </ul>
+    </nav>
+    
+    <article>
+      <p>&#128071; 박스 안의 글씨를 누르면 내용이 나타나요:) &#128071;</p>
+      <!--테이블+아이프레임-->
+      <table>
+        <tr>
+          <th><p><a href="../html/iframe1.html" target="iframe_a">고양이 습성</a></p></th>
+          <th><p><a href="../html/iframe2.html" target="iframe_a">사냥놀이</a></p></th>
+          <th><p><a href="../html/iframe3.html" target="iframe_a">강아지와 차이점</a></p></th>
+        </tr>
+      </table>
+
+      <!--아이프레임1,2,3 사용-->
+      <iframe name="iframe_a" height="350px" width="100%" title="Iframe Example"></iframe>
+      <p>고양이는 어떤 습성들이 있을까? &#128073; 오른쪽의 "고양이 습성"을 클릭하세요</p>
+      <p>고양이 어떻게 놀아줘요? &#128073; 오른쪽의 "사냥놀이"을 클릭하세요</p>
+      <p>고양이와 강아지는 어떤 점이 다를까? &#128073; 오른쪽의 "강아지와 차이점"을 클릭하세요</p>
+      
+      
+    </article>
+  </section>
+  
+  <footer>
+    <p>Footer</p>
+  </footer>
+  
+</body>
+</html>

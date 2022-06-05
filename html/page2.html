@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>건강관리</title>
+  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/*시기별 예방접종 테이블 스타일*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h2>건강관리</h2>
+  </header>
+  
+  <section>    
+    <article>
+      <h1>&#128137; 시기별 예방접종</h1>
+      <!--예방접종 테이블-->
+      <table>
+        <tr>
+          <th></th>
+          <th>최초 접종 시기</th>
+          <th>접종 횟수</th>
+        </tr>
+        <tr>
+          <td>종합 백신</td>
+          <td>생후 7~8주</td>
+          <td>3주 간격<br>총 2~3회</td>
+        </tr>
+        <tr>
+          <td>광견병</td>
+          <td>생후 3개월 이후</td>
+          <td>1회</td>
+        </tr>
+        <tr>
+          <td>백혈병</td>
+          <td>생후 7~8주</td>
+          <td>3주 간격<br>총 2~3회</td>
+        </tr>
+    </table>
+    <p>&#128205; 추가 접종 매년 1회!!</p>
+    <a href="https://www.youtube.com/watch?v=hB-31JMGCWM" target="_blank" title="미야옹철">영상으로 더 알아가기</a>
+    </article>
+
+ <!--심장사상충-->
+<article>
+  <h1>&#128138; 심장사상충</h1>
+  <table>
+    <tr>
+      <td>심장사상충이란??</td>
+      <td>고양이가 모기에게 물리는 경우,
+        <br> 모기의 침이 몸속에 꽂히는 순간 침을 통해 몸으로 들어와
+        <br> 심장 안에 자리를 잡으며 건강을 위협하게 되는<br> 기생충의 일종이다
+      </td>
+    </tr>
+    <tr>
+      <td>약 바르는 주기</td>
+      <td>- 한달에 한 번
+        <br>- 특히 모기가 있는 초여름 ~ 늦가을에는 꼭 발라주어야 한다
+      </td>
+    </tr>
+    <tr>
+      <td>주의사항</td>
+      <td>- 다묘가정의 경우 서로 그루밍을 하지 못하도록<br> 4시간 정도 잘 관찰해야 한다!!
+      </td>
+    </tr>
+    <tr>
+      <td>구입방법</td>
+      <td>- 약국 or 동물병원
+        <br>- 온라인 사이트
+      </td>
+    </tr>
+</table>
+<br>
+  <a href="https://www.youtube.com/watch?v=DcFl9s0AROk" target="_blank" title="윤샘의 마이펫상담소">영상으로 더 알아가기</a>
+</article>
+  </section>
+<!--두 번째 칸-->
+  <section>
+    <article>
+      <h1>&#127973; 건강검진</h1>
+      <table>
+        <tr>
+          <td>
+            <a href="https://www.youtube.com/watch?v=crfmMU4SsFY" target="_blank" title="냥신TV">영상으로 더 알아가기</a>
+           </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://www.youtube.com/watch?v=mi5R7DjPqx0" target="_blank" title="윤샘의 마이펫상담소">영상으로 더 알아가기2</a>
+           </td>
+        </tr>
+      </table>
+    </article>
+
+    <article>
+      <h1>&#128049; 중성화 수술</h1>
+      <table>
+        <tr>
+          <td>시기</td>
+          <td>5 ~ 6개월
+            <br>첫 발정이 오기 전 수술해 주는 것이 고양이의 정신적, 신체적 건강에 좋다
+            <br>(성석숙 이후 수술을 받으면 문제행동이 남을 수 있으며,
+            <br>질병발생 위험이 급격히 높아진다)
+          </td>
+        </tr>
+        <tr>
+          <td>조건</td>
+          <td>최소 2kg 이상
+            <br>체중이 2kg을 넘어야 마취 위험성이 높아지는 것을 막을 수 있다
+            </td>
+        </tr>
+        <tr>
+          <td>사후<br>관리</td>
+          <td>-급여 사료 제한
+            <br>수술 후 기초대사량이 떨어져 살이 찔 수 있으니 다음과 같이 급여해야 한다
+            <br>성장기: 체형 변화에 따라,
+            <br> 성묘: 평소 급여량의 10%를 줄여 
+            <br>
+            <br>-사냥놀이
+            <br>수술 후 호르몬 균형이 바뀌어 사냥놀이에 흥미를 잃을 수 있다
+            <br>매일 시간을 정해 규칙적으로 놀아줘야 한다
+            <br>
+            <br>-거부감 완화
+            <br>중성화 수술로인해 병원에 대한 기억이 트라우마로 남을 수 있다
+            <br>따라서 평상시 스트레스를 완화시켜주기 위한 노력을 해야 한다
+            <br>+틈틈히 이동장 훈련을 해주는 것도 좋은 방법이다.
+          </td>
+        </tr>
+      </table>
+      <br>
+      <a href="https://www.youtube.com/watch?v=wp0RpQ6d26s" target="_blank" title="냥신TV">영상으로 더 알아가기</a>
+    </article>
+  </section>
+
+ 
+
+  <!--맨 마지막 하단-->
+  <footer>
+    <p>고양이 건강수첩<br>&#128071;</p>
+    <a href="https://blog.naver.com/dndus01/220730583426" target="_blank" title="건강수첩 양식">무료다운</a>
+  </footer>
+  
+</body>
+</html>
