@@ -1,0 +1,27 @@
+<html> <body>
+<?PHP 
+  $conn = mysqli_connect('localhost', 'root',  '', 'sample');
+  if(mysqli_connect_errno()) {
+    printf("%s \n", mysqli_connect_error());
+    exit;
+  }
+  $query = "select * from fruit where price >= 10";
+  $result = mysqli_query( $conn, $query );
+  print "<table border=1><tr>" . 
+       "<th>nicname</th>" .
+       "<th>id</th>" . 
+       "<th>pwd</th>" .
+       "<th>반려동물 이름</th>".
+	   "<th>email</th>".
+	   "<th>date</th></tr>";
+  while( $row = mysqli_fetch_row($result) ) {
+    print "<tr><td>" . $row[0] . "</td>" . 
+         "<td>" . $row[1] . "</td>" . 
+         "<td>" . $row[2] . "</td>" . 
+         "<td>" . $row[3] . "</td></tr>";
+  }
+  print "</table>";
+  mysqli_free_result($result);
+  mysqli_close($conn);
+?>
+</body> </html>

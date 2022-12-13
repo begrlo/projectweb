@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>영상 링크</h2>
+</header>
+
+<section>
+  <article>
+    <a href="https://www.youtube.com/watch?v=Gdy-doXHovI"><h1>&#128250; 호흡수 측정법</h1></a>
+    <p>심장병이 있는 고양이와 개의 수면중 호흡수 측정법 보호자 안내 영상입니다.</p>
+	<br><br>
+    <a href="https://www.youtube.com/watch?v=0oi7vGK9PTs"><h1>&#128250; 응급처치</h1></a>
+    <p>고양이 심장 마사지, 고양이 인공호흡 방법 영상입니다.</p>
+	<br><br>
+	<a href="https://www.youtube.com/watch?v=xaajtx7YObI"><h1>&#128250; 응급상황 대처</h1></a>
+    <p>고양이 응급상황시 대처요령 영상입니다.</p>
+	<br><br>
+	<a href="https://www.youtube.com/watch?v=a31rEByDqos"><h1>&#128250; 자가 건강검진</h1></a>
+    <p>고양이 자가 건강검진. 호흡수, 심박수, 체온, 구강점막 측정법 영상입니다.</p>
+	<br><br>
+	<a href="https://www.youtube.com/watch?v=yInwLHlHXUE"><h1>&#128250; 약 먹이는 방법</h1></a>
+	<p>고양이 약 먹이는 법에 대한 영상입니다.</p>
+  </article>
+</section>
+</body>
+</html>
+
